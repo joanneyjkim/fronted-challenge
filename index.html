@@ -1,4 +1,4 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,16 +7,59 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <section class="Eastbound">
-      <h1> Eastbound </h1>
-      <h2> Line </h2>
-        <h3> 60 </h3>
-        <h3> 124 </h3>
-      <h2> Destination </h2>
-        <h3> Randolph/Harbor Dr </h3>
-        <h3> Navy Pier </h3>
-      <h2> Frequency </h2>
-        <h3> Every 20 minutes </h3>
-        <h3> Every 10 minutes </h3>
-  </body>
+<title>Busy Bus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<body>
+
+<div class="w3-container">
+  <h2>Busy Bus</h2>
+  <div class="w3-dropdown-click">
+    <button onclick="myFunction()" class="w3-button w3-black">Eastbound</button>
+    <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+      <a href="#" class="w3-bar-item w3-button">Line/Destination/Frequency</a>
+      <a href="#" class="w3-bar-item w3-button">60/Randoplh/Harbor Dr/20mins</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+  <div class="w3-dropdown-click">
+    <button onclick="myFunction()" class="w3-button w3-black">Northbound</button>
+    <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+    <div class="w3-dropdown-click">
+      <button onclick="myFunction()" class="w3-button w3-black">Southbound</button>
+      <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+      </div>
+      <div class="w3-dropdown-click">
+        <button onclick="myFunction()" class="w3-button w3-black">Reroute</button>
+        <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="#" class="w3-bar-item w3-button">Link 1</a>
+          <a href="#" class="w3-bar-item w3-button">Link 2</a>
+          <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+      <div class="w3-dropdown-click">
+        <button onclick="myFunction()" class="w3-button w3-black">Out of service</button>
+        <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="#" class="w3-bar-item w3-button">Link 1</a>
+          <a href="#" class="w3-bar-item w3-button">Link 2</a>
+          <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("Demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
